@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Menu Navigation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Welcome to the Knowledge Hub</h1>
+
+  <div class="subject" onclick="toggleTopics('onepiece-topics')">
+    <h2>One Piece ⌄</h2>
+    <div id="onepiece-topics" class="topics hidden">
+      <a href="topics/luffy.html">Luffy</a>
+      <a href="topics/nami.html">Nami</a>
+      <a href="topics/usopp.html">Usopp</a>
+      <a href="topics/zoro.html">Zoro</a>
+    </div>
+  </div>
+
+  <div class="subject" onclick="toggleTopics('bacon-topics')">
+    <h2>Bacon ⌄</h2>
+    <div id="bacon-topics" class="topics hidden">
+      <a href="topics/cooking.html">Cooking</a>
+      <a href="topics/history.html">History</a>
+      <a href="topics/types.html">Myths</a>
+      <a href="topics/funfacts.html">Fun Facts</a>
+    </div>
+  </div>
+
+  <div class="subject" onclick="toggleTopics('sharks-topics')">
+    <h2>Sharks ⌄</h2>
+    <div id="sharks-topics" class="topics hidden">
+      <a href="topics/behavior.html">Behavior</a>
+      <a href="topics/myths.html">Types</a>
+      <a href="topics/typesharks.html">TypeSharks</a>
+      <a href="topics/conversation.html">Conversation</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
